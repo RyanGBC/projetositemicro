@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Empresa especializada em serviços de limpeza. Entre em contato para um ambiente impecável.">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloflex.css">
+</head>
+<body>
+    <header>
+        <h1> Todos os Produtos </h1>
+        <a href="#" class="btn-abrir" onclick="AbrirMenu()">&#9776; Abrir </a>
+        <section>
+            <nav id="menu">
+                <a href="#" onclick="fecharMenu()"> &times; Fechar </a>
+                <a href="index.html"> Home</a>
+                <a href="apresentacao.html"> Sobre </a>
+            </nav>
+            <main id="conteudo">
+            </main>
+        </section>
+    </header>
+    <section class="container">
+        <article class="items">Produto 1</article>
+        <article class="items">Produto 2</article>
+        <article class="items">Produto 3</article>
+        <article class="items">Produto 4</article>
+        <article class="items">Produto 5</article>
+        <article class="items">Produto 6</article>        
+    </section>
+    <footer>
+        <p>&copy; 2023 Limp Lar. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        function AbrirMenu() {
+            document.getElementById('menu').style.width = "250px";
+            document.getElementById('conteudo').style.marginLeft = "250px";
+        }
+
+        function fecharMenu() {
+            document.getElementById('menu').style.width= "0px";
+            document.getElementById('conteudo').style.marginLeft = "0px";
+        }
+    </script>
+</body>
+</html>

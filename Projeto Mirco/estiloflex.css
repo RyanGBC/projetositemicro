@@ -1,0 +1,19 @@
+
+.container {
+    width: 740px;
+    height: 480px ;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+.items {
+    border: 2px solid orange;
+    width: 120px;
+    height: 120px;
+    margin: 100px;
+}
